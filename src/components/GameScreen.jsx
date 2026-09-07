@@ -88,7 +88,7 @@ export default function GameScreen({
       )}
 
       <section className="turn-screen">
-        <article className="player-card active-player">
+        <article className={`player-card active-player ${diceState.hasRolled ? "auto-roll-compact" : ""}`}>
           <MiniScoreboard
             players={players}
             activePlayerIndex={activePlayerIndex}

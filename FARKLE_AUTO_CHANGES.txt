@@ -21,3 +21,9 @@ September 7 update:
 - Dice tray is hidden completely until Auto Roll is used.
 - Auto-rolled dice now use six different colors for easier identification.
 - Tapping a die selects all dice showing the same value; the selected/matching dice turn white.
+
+Compact Auto Roll layout update:
+- Once Auto Roll has been used, the dice, scoring buttons, scoreboard, turn header, and turn-action buttons become more compact.
+- On iPad-sized screens the scoring grid stays at six columns so the dice and all scoring rows fit much better vertically.
+- Normal physical-dice layout remains unchanged until Auto Roll is used.
+- Preserved the /Farkle-Auto/ GitHub Pages paths and bumped the service-worker cache.

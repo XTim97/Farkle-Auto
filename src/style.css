@@ -1163,3 +1163,121 @@ button.undo-button:active:not(:disabled) {
 @media (prefers-reduced-motion: reduce) {
   .auto-roll-grid-button { animation: none; }
 }
+
+
+/* Compact the game screen after Auto Roll is used so dice + scoring controls fit on iPad. */
+.auto-roll-compact .dice-area {
+  margin: 0.45rem 0 0.4rem;
+}
+
+.auto-roll-compact .dice-area-toolbar {
+  gap: 0.4rem;
+  margin-bottom: 0.35rem;
+  min-height: 0;
+}
+
+.auto-roll-compact .dice-selection-status {
+  font-size: 0.9rem;
+  line-height: 1.15;
+}
+
+.auto-roll-compact .dice-tray {
+  min-height: 88px;
+  gap: 0.45rem;
+  padding: 0.4rem;
+  border-radius: 12px;
+}
+
+.auto-roll-compact .die-button {
+  width: 68px;
+  height: 68px;
+  min-height: 68px;
+  border-width: 3px;
+  border-radius: 12px;
+  font-size: 3.65rem;
+}
+
+.auto-roll-compact .score-buttons {
+  gap: 0.35rem;
+  margin: 0.45rem 0;
+}
+
+.auto-roll-compact .score-button {
+  min-height: 54px;
+  padding: 0.35rem 0.45rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  line-height: 1.05;
+}
+
+.auto-roll-compact .score-button-points {
+  margin-top: 0.12rem;
+  font-size: 1.05em;
+}
+
+.auto-roll-compact .card-actions {
+  gap: 0.4rem;
+  margin-top: 0.45rem;
+}
+
+.auto-roll-compact .card-actions button {
+  min-height: 50px;
+  padding: 0.45rem 0.65rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 700px) {
+  .auto-roll-compact {
+    padding: 0.65rem;
+  }
+
+  .auto-roll-compact .mini-scoreboard {
+    gap: 0.35rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .auto-roll-compact .mini-score {
+    min-height: 42px;
+    padding: 0.2rem 0.55rem;
+    border-radius: 10px;
+  }
+
+  .auto-roll-compact .mini-score strong {
+    font-size: 1.1rem;
+  }
+
+  .auto-roll-compact .mini-score span {
+    font-size: 1.3rem;
+  }
+
+  .auto-roll-compact .active-turn-header {
+    gap: 0.35rem 0.8rem;
+    padding-bottom: 0.35rem;
+  }
+
+  .auto-roll-compact h2 {
+    font-size: 1.85rem;
+    line-height: 1;
+  }
+
+  .auto-roll-compact .active-turn-score {
+    font-size: 1rem;
+  }
+
+  .auto-roll-compact .score-buttons {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 900px) and (orientation: landscape) {
+  .auto-roll-compact .score-button {
+    min-height: 56px;
+    padding: 0.32rem 0.45rem;
+    font-size: clamp(0.82rem, 1.15vw, 1rem);
+  }
+
+  .auto-roll-compact .card-actions button {
+    min-height: 52px;
+    font-size: 1rem;
+  }
+}
