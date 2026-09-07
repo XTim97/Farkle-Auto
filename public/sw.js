@@ -1,8 +1,8 @@
 const CACHE_NAME = "farkle-auto-cache-v1.3.0";
 
 const urlsToCache = [
-  "/farkle-auto/",
-  "/farkle-auto/index.html"
+  "/Farkle-Auto/",
+  "/Farkle-Auto/index.html"
 ];
 
 self.addEventListener("install", (event) => {
