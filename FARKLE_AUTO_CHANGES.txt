@@ -1,0 +1,23 @@
+Farkle Auto changes
+
+Dice turn flow:
+- The first Roll button on each player's turn rolls 6 random dice automatically.
+- The rolled dice appear in the dice tray.
+- Tap individual dice to select/deselect the dice you want to score.
+- Scoring buttons remain disabled until at least one die is selected.
+- Tapping a scoring button adds that score and removes the selected dice from the tray.
+- After scoring, the player can End Turn or Roll Again.
+- Roll Again rerolls only the dice still remaining in the tray.
+- If all 6 dice were scored, Roll Again rolls a fresh set of 6 dice (hot dice).
+- Undo restores the most recently removed dice when used before the next reroll.
+- Farkle and End Turn continue to work as before.
+
+Optional dice roller update:
+- Roll Dice is not required to begin a turn.
+- Before using the built-in roller, all scoring buttons remain available for players using physical dice.
+- If the built-in roller is used, selected on-screen dice are required for scoring and are removed after the scoring button is tapped.
+
+September 7 update:
+- Dice tray is hidden completely until Auto Roll is used.
+- Auto-rolled dice now use six different colors for easier identification.
+- Tapping a die selects all dice showing the same value; the selected/matching dice turn white.
