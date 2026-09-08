@@ -1049,6 +1049,23 @@ button.undo-button:active:not(:disabled) {
   font-weight: 800;
 }
 
+.dice-selection-status:has(.dice-instruction-secondary) {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  gap: clamp(3rem, 10vw, 9rem);
+}
+
+.dice-instruction-secondary {
+  white-space: nowrap;
+}
+
+.dice-instruction-secondary strong {
+  font-weight: 1000;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
 .dice-count-panel {
   border: 1px solid #64748b;
   border-radius: 14px;

@@ -114,7 +114,12 @@ const DiceTray = forwardRef(function DiceTray(
         {!readyToRollAgain && dice.length > 0 && (
           <span className="dice-selection-status" aria-live="polite">
             {selectedDiceIds.length === 0
-              ? "Tap each die you want to select"
+              ? (
+                <>
+                  <span>Tap each die you want to select</span>
+                  <span className="dice-instruction-secondary">Score each <strong>INDIVIDUAL</strong> die separately</span>
+                </>
+              )
               : `${selectedDiceIds.length} selected — tap a scoring button`}
           </span>
         )}
